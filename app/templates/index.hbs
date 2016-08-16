@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    {{#swiper-container}}
+      {{#each model as |story|}}
+       {{#swiper-slide}}{{carousel-tile story=story}}{{/swiper-slide}}
+       {{/each}}
+     {{/swiper-container}}
+ </div>
+  <div class="row">
+    <ul>
+      {{#each model as |story|}}
+      {{story-tile story=story}}
+      {{/each}}
+    </ul>
+  </div>
+</div>

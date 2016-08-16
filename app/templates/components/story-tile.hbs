@@ -1,0 +1,12 @@
+
+<li>
+  <div class="col-md-6">
+    {{#link-to 'story-detail' story.id}}
+    <div>
+      <img src={{story.image}} class="story-image">
+      <p><h3>{{story.headline}}</h3></p>
+      <p><h6>{{story.category}}</h6></p>
+    </div>
+    {{/link-to}}
+  </div>
+</li>

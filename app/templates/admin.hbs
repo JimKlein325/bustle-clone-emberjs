@@ -1,0 +1,8 @@
+<div class="container">
+{{#link-to 'admin-newstory'}}New{{/link-to}}
+  <ul>
+    {{#each model as |story|}}
+      {{admin-storytile story=story destroyStory="destroyStory" update="update" save="save"}}
+    {{/each}}
+  </ul>
+</div>
